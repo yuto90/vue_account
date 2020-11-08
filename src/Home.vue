@@ -9,26 +9,115 @@
             "
         >
                 <br><br><br><br><br>
-            <div style="
-                text-align: center;
-                display: block;
-            ">
+            <div style="text-align: center; display: block; ">
                 <h3>
                     <a @click="last_month()">＜　　</a>
                         {{ year + year_count }}年{{ month + month_count }}月
                     <a @click="next_month()">　　＞</a>
                 </h3>
             </div>
-
-            <h1 style="
-                color: #ff6666;
-                border-bottom: 3px solid gray;
-                text-align: center;
-                "
-            >
+            <h1 style="color: #ff6666; border-bottom: 3px solid gray; text-align: center; " >
                 {{ count_all }}円
             </h1>
-            <table style="padding: 0 20px" width="100%" height="350">
+
+
+
+
+            <table width="100%" height="70" >
+                <tr>
+                    <td style="text-align: center; width: 50%;">
+                        <v-ons-button @click="food_dialog = true" modifier="quiet" ripple large style="width: 100%; color: black;">
+                            <div style="
+                                border: 1px solid black; 
+                                border-radius: 10px;
+                                background-size: 60% 100%;
+                                background-image: url(images/job_mystery_shopper_man.png);
+                                background-repeat:  no-repeat;         
+                                background-color:rgba(255,255,255,0.7);
+                                background-blend-mode:lighten;
+                            ">
+                                <div>食費</div>
+                                <br>
+                                <div>{{ food }}円</div>
+                            </div>
+                        </v-ons-button>
+                    </td>
+                    <td style="text-align: center; width: 50%;">
+                        <v-ons-button @click="friends_dialog = true" modifier="quiet" ripple large style="width: 100%; color: black;">
+                            <div style="border: 1px solid black; border-radius: 10px;">
+                                <div>交際費</div>
+                                <br>
+                                <div>{{ friends }}円</div>
+                            </div>
+                        </v-ons-button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center; width: 50%;">
+                        <v-ons-button @click="food_dialog = true" modifier="quiet" ripple large style="width: 100%; color: black;">
+                            <div style="
+                                border: 1px solid black; 
+                                border-radius: 10px;
+                                background-size: 60% 100%;
+                                background-image: url(images/job_mystery_shopper_man.png);
+                                background-repeat:  no-repeat;         
+                                background-color:rgba(255,255,255,0.7);
+                                background-blend-mode:lighten;
+                            ">
+                                <div>日用品費</div>
+                                <br>
+                                <div>{{ daily }}円</div>
+                            </div>
+                        </v-ons-button>
+                    </td>
+                    <td style="text-align: center; width: 50%;">
+                        <v-ons-button @click="friends_dialog = true" modifier="quiet" ripple large style="width: 100%; color: black;">
+                            <div style="border: 1px solid black; border-radius: 10px;">
+                                <div>娯楽費</div>
+                                <br>
+                                <div>{{ entertainment }}円</div>
+                            </div>
+                        </v-ons-button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center; width: 50%;">
+                        <v-ons-button @click="food_dialog = true" modifier="quiet" ripple large style="width: 100%; color: black;">
+                            <div style="
+                                border: 1px solid black; 
+                                border-radius: 10px;
+                                background-size: 60% 100%;
+                                background-image: url(images/job_mystery_shopper_man.png);
+                                background-repeat:  no-repeat;         
+                                background-color:rgba(255,255,255,0.7);
+                                background-blend-mode:lighten;
+                            ">
+                                <div>固定費</div>
+                                <br>
+                                <div>{{ fixed }}円</div>
+                            </div>
+                        </v-ons-button>
+                    </td>
+                    <td style="text-align: center; width: 50%;">
+                        <v-ons-button @click="friends_dialog = true" modifier="quiet" ripple large style="width: 100%; color: black;">
+                            <div style="border: 1px solid black; border-radius: 10px;">
+                                <div>その他</div>
+                                <br>
+                                <div>{{ other }}円</div>
+                            </div>
+                        </v-ons-button>
+                    </td>
+                </tr>
+            </table>
+
+<br>
+<br>
+<br>
+
+<!--
+            <table style="padding: 0 20px" width="100%" height="350" >
                 <tr>
                     <td style="text-align: left">食費</td>
                     <td style="text-align: center">{{ food }}円</td>
@@ -120,6 +209,7 @@
                     <br><br><br>
                 </tr>
             </table>
+            -->
 
             <br><br>
             <p style="text-align: right">
@@ -471,6 +561,7 @@ export default {
     },
 };
 </script>
+
 
 <style scoped>
 </style>
