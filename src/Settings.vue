@@ -17,7 +17,7 @@
                                 color: gray;
                             "
                         >
-                            設定
+						広告
                         </v-ons-button>
                     </td>
                 </tr>
@@ -36,7 +36,7 @@
                                 color: gray;
                             "
                         >
-                            設定
+						広告
                         </v-ons-button>
                     </td>
                 </tr>
@@ -54,7 +54,7 @@
                                 color: gray;
                             "
                         >
-                            設定
+						広告
                         </v-ons-button>
                     </td>
                 </tr>
@@ -72,7 +72,7 @@
                                 color: gray;
                             "
                         >
-                            設定
+						広告
                         </v-ons-button>
                     </td>
                 </tr>
@@ -90,7 +90,7 @@
                                 color: gray;
                             "
                         >
-                            設定
+						広告
                         </v-ons-button>
                     </td>
                 </tr>
@@ -108,7 +108,7 @@
                                 color: gray;
                             "
                         >
-                            設定
+						広告
                         </v-ons-button>
                     </td>
                 </tr>

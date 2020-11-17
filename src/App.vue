@@ -37,7 +37,7 @@ export default {
                 },
                 {
                     icon: this.md() ? null : "ion-ios-settings",
-                    label: "Settings",
+                    label: "広告",
                     page: settingsPage,
                 },
             ],
