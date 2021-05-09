@@ -362,6 +362,7 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 
+// 公開して問題ないやつ
 var firebaseConfig = {
     apiKey: "AIzaSyBsdm-yvAIEJTyhBBU71Hm0VuBRdkxzcDs",
     authDomain: "account-vue-cb639.firebaseapp.com",
